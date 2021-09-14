@@ -9,8 +9,7 @@ import java.lang.annotation.Target;
 import javax.validation.Constraint;
 import javax.validation.Payload;
 
-//WE WILL CREATE OUR CUSTOM VALIDATION RULE FOR EMAIL.
-//WE WILL CREATE CUSTOM JAVA ANNOTATION @ValidEmail.
+//CUSTOM ANNOTATION FOR EMAIL VALIDATION
 
 
 //This is helper class EmailValidator, that contains business rules/validation logic.
