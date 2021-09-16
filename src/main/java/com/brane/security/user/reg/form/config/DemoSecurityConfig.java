@@ -10,6 +10,8 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+import com.brane.security.user.reg.form.service.UserService;
+
 
 
 //THIS IS JAVA CONFIG CLASS.WE ARE USING PURE JAVA CONFIG, NO XML
