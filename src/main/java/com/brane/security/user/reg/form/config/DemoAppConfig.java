@@ -18,7 +18,6 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
@@ -30,15 +29,12 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 //so we can do hibernate transaction in the background(@Transactional)
 @EnableTransactionManagement
 //base package where to scan components for Controller class,Service class,Reporistory class...
-@ComponentScan("com.brane.security.user.reg.form")
+@ComponentScan(basePackages="com.brane.security.user.reg.form")
 //Classpath is a parameter in the Java Virtual Machine or the Java compiler 
 //that specifies the location of user-defined classes and packages. 
 //The parameter may be set either on the command-line, or through an environment variable.
 @PropertySource("classpath:persistence-mysql.properties")
-//with this interface WebMvcConfigurer we can make our custom configuration for SPRING MVC
-//all methods are default methods, which are not implemented in this class
-//Evrey class which have this annotation @EnableWebMvc can implement this interface WebMvcConfigurer
-public class DemoAppConfig implements WebMvcConfigurer {
+public class DemoAppConfig {
 
 	//this variable env holds properties from the persistence-mysql.properties file
 	//THIS IS GLOBAL ENVIRONMENT VARIABLE
@@ -81,7 +77,7 @@ public class DemoAppConfig implements WebMvcConfigurer {
 				
 		// set the jdbc driver
 		try {
-			securityDataSource.setDriverClass(env.getProperty("com.mysql.jdbc.Driver"));
+			securityDataSource.setDriverClass("com.mysql.jdbc.Driver");		
 		} catch (PropertyVetoException exc) {
 			throw new RuntimeException(exc);
 		}
