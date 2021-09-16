@@ -3,6 +3,7 @@ package com.brane.security.user.reg.form.service;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
 import com.brane.security.user.reg.form.entity.User;
+import com.brane.security.user.reg.form.user.CrmUser;
 
 //UserDetailsService
 //Interface UserService extends interface UserDetailsService and class UserServiceImpl

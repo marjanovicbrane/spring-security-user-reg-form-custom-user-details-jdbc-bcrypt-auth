@@ -2,12 +2,10 @@ package com.brane.security.user.reg.form.service;
 
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -19,6 +17,7 @@ import com.brane.security.user.reg.form.dao.RoleDao;
 import com.brane.security.user.reg.form.dao.UserDao;
 import com.brane.security.user.reg.form.entity.Role;
 import com.brane.security.user.reg.form.entity.User;
+import com.brane.security.user.reg.form.user.CrmUser;
 
 //THIS IS SERVICE LAYER
 @Service
