@@ -7,8 +7,8 @@ SO WE CAN SHOW USERNAME AND ROLES, WHEN WE ARE LOGGED IN SYSTEM. -->
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 
 
-<!-- This is page will show up for this mapping showHome(/) from controller class 
-when we are goggen in-->
+<!-- This is page will be shown for this mapping showHome(/) from controller class 
+when we are logged in-->
 
 <head>
 	<title>BM Company Home Page</title>
