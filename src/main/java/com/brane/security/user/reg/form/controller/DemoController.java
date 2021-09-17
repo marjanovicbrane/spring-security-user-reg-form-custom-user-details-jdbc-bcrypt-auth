@@ -23,6 +23,14 @@ public class DemoController {
 		return "leaders";
 	}
 	
+	
+	//request mapping /systems for ADMIN ROLE
+	@GetMapping("/systems")
+	public String showSystems() {
+			
+		return "systems";
+	}
+	
 }
 
 
