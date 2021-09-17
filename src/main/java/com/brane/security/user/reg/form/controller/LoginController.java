@@ -14,6 +14,15 @@ public class LoginController {
 		return "fancy-login";
 	}
 	
+	
+	//If some user which is not authorized trys to access some additional page such is /systems or
+	// /leaders, he will get this access denied page.
+	@GetMapping("/access-denied")
+	public String showAccessDenied() {
+			
+		return "access-denied";
+			
+	}
 }
 
 
