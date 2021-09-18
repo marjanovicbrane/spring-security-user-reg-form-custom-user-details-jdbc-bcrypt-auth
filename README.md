@@ -7,7 +7,7 @@ I applied authorization for appropriate user roles (EMPLOYEE, MANAGER or ADMIN).
 
 I also made registration form, so we can register a new user and save it to the database.Every new user which we registered have EMPLOYEE role by default.In database we have already stored some users with role MANAGER and ADMIN, these users have also role EMPLOYEE.
 
-This registration form have validation rules, because in this example we used Hibernate Validator.We made our custom validation rules, ie. custom java annoations.On the next picture we can see how registration form looks like, but first we will break this validations to se all error messages.
+This registration form have validation rules, because in this example we used Hibernate Validator.We made our custom validation rules, ie. custom java annoations.On the next picture we can see how registration form looks like, but first we will break this validations to see all error messages.
 
 ![2](https://user-images.githubusercontent.com/61464267/133895376-e52b2dea-e073-4ade-8ff0-8b8ae8d87bca.PNG)
 
